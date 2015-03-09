@@ -1,5 +1,5 @@
 angular.module('starter.directives')
-	.directive('projectbar', [ function () {
+	.directive('projectbar', ['MonthDates', function (MonthDates) {
 	return {
 		templateUrl: 'templates/projectbar.html',
 		restrict: 'E',
@@ -22,6 +22,21 @@ angular.module('starter.directives')
 				// If negative, find positive equivalent, +1 to compensate for starting from 0.
 				if(diff < 0) {
 					diff = 11-(diff*-1)+1;
+				}
+
+				var numFullMonths = 0;
+				// Check if first month begins on first of month. If not, calculate percentage.
+				var percentageFirstMonth = 0;
+				if(start.getDate() === 1) {
+					numFullMonths += 1;
+				}
+				else {
+					percentageFirstMonth = parseInt((start.getDate() / 30) * 100);
+					console.log(percentageFirstMonth);
+				}
+				// Check if last month ends on last day. If not, calculate percentage.
+				if(end.getDate() === MonthDates.getNumDays(end.getMonth())) {
+					console.log("Ends on last day of month: " + end.getDate());
 				}
 
 				// Check to see if month range spans new year.

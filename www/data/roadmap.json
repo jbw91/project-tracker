@@ -1,7 +1,7 @@
 [
 	{
 		"title":"Mobile App",
-		"startDate":"1-JAN-2015",
+		"startDate":"10-JAN-2015",
 		"endDate":"30-MAR-2015",
 		"color":"#0169b7",
 		"status":1
@@ -23,7 +23,7 @@
 	{
 		"title":"Personal Portfolio",
 		"startDate":"1-DEC-2014",
-		"endDate":"30-APR-2015",
+		"endDate":"20-APR-2015",
 		"color":"#ab02d1",
 		"status":1
 	}
