@@ -1,0 +1,11 @@
+<ion-view roadmap view-title="Roadmap">
+	<monthrow></monthrow>
+	<ion-content class="padding has-subheader">
+		<!-- <div class="card" ng-repeat="project in projects">
+			<div class="item item-text-wrap">
+				{{project.title}}
+			</div>
+		</div> -->
+		<projectbar ng-repeat="project in projects" project="project"></projectbar>
+	</ion-content>
+</ion-view>

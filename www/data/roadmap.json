@@ -1,0 +1,30 @@
+[
+	{
+		"title":"Mobile App",
+		"startDate":"1-JAN-2015",
+		"endDate":"30-MAR-2015",
+		"color":"#0169b7",
+		"status":1
+	},
+	{
+		"title":"Desktop Web App",
+		"startDate":"1-FEB-2015",
+		"endDate":"30-APR-2015",
+		"color":"#e8022c",
+		"status":1
+	},
+	{
+		"title":"HR System",
+		"startDate":"1-JAN-2015",
+		"endDate":"28-FEB-2015",
+		"color":"#02ebcc",
+		"status":1
+	},
+	{
+		"title":"Personal Portfolio",
+		"startDate":"1-DEC-2014",
+		"endDate":"30-APR-2015",
+		"color":"#ab02d1",
+		"status":1
+	}
+]

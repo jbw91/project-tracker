@@ -1,0 +1,46 @@
+{
+  "name": "resourcify",
+  "version": "1.0.4",
+  "authors": [
+    "Erik Donohoo <erikdonohoo@gmail.com>"
+  ],
+  "description": "Dead simple rich data models for angular",
+  "main": "dist/resourcify.js",
+  "dependencies": {
+    "angular": "^1.2.0"
+  },
+  "devDependencies": {
+    "angular-mocks": "^1.2.0",
+    "angular-scenario": "^1.2.0"
+  },
+  "keywords": [
+    "angular",
+    "javascript",
+    "resource",
+    "$http",
+    "$resource"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "src",
+    "karma.conf.js",
+    "Gruntfile.js",
+    "module.*"
+  ],
+  "homepage": "https://github.com/erikdonohoo/resourcify",
+  "_release": "1.0.4",
+  "_resolution": {
+    "type": "version",
+    "tag": "v1.0.4",
+    "commit": "fd67eb968ec9fc8fc6ec5b4755e3891d334b1fca"
+  },
+  "_source": "git://github.com/erikdonohoo/resourcify.git",
+  "_target": "~1.0.4",
+  "_originalSource": "resourcify",
+  "_direct": true
+}
