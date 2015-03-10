@@ -27,17 +27,29 @@ angular.module('starter.directives')
 				var numFullMonths = 0;
 				// Check if first month begins on first of month. If not, calculate percentage.
 				var percentageFirstMonth = 0;
+				var actualFirstPercentage = 0;
 				if(start.getDate() === 1) {
 					numFullMonths += 1;
 				}
 				else {
-					percentageFirstMonth = parseInt((start.getDate() / 30) * 100);
-					console.log(percentageFirstMonth);
+					percentageFirstMonth = parseInt((start.getDate() / MonthDates.getNumDays(start.getMonth())) * 100);
+					actualFirstPercentage = parseInt(25 * (percentageFirstMonth * 0.01));
 				}
 				// Check if last month ends on last day. If not, calculate percentage.
+				var percentageLastMonth = 0;
+				var actualLastPercentage = 0;
 				if(end.getDate() === MonthDates.getNumDays(end.getMonth())) {
-					console.log("Ends on last day of month: " + end.getDate());
+					numFullMonths += 1;
 				}
+				else {
+					percentageLastMonth = parseInt((end.getDate() / MonthDates.getNumDays(end.getMonth())) * 100);
+					actualLastPercentage = parseInt(25 * (percentageLastMonth * 0.01));
+				}
+
+				// Calculate Total length
+				$scope.totalLength = actualFirstPercentage + (numFullMonths * 25) + actualLastPercentage;
+				$scope.offsetLength = 25 - actualFirstPercentage;
+				console.log("Offset: " + $scope.offsetLength + " Total: " + $scope.totalLength);
 
 				// Check to see if month range spans new year.
 				// if(monthRange[0] > monthRange[3]) {
