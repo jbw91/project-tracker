@@ -3,4 +3,8 @@
 }
 
 #monthRow .month-border {
+	border-left: 1px solid #cccccc;
+}
+#monthRow .month-border:nth-of-type(1) {
+	border-left:none;
 }

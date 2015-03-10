@@ -1,0 +1,17 @@
+.bar-row {
+	width:100%;
+	margin-bottom:15px;
+}
+
+.bar-title {
+	display:block;
+	width:100%;
+	margin-bottom:3px;
+	margin-left:5px;
+}
+
+.project-bar {
+	display:block;
+	height:20px;
+	width:50%;
+}

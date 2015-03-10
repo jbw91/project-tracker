@@ -5,3 +5,11 @@
 .no-padding {
 	padding:0 !important;
 }
+.padding-updown {
+	padding-top:10px;
+	padding-bottom:10px;
+}
+.no-side-padding {
+	padding-left:0px;
+	padding-right:0px;
+}

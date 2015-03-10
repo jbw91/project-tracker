@@ -8,12 +8,15 @@ angular.module('starter.directives')
 		},
 		link: function($scope) {
 			$scope.calculateWidth = function(project) {
-				// 1) Determine how many full months are displayed, add 25% for each month
+				// 1) Determine how many full months are displayed FROM THE CURRENT MONTH LIST, add 25% for each month
 				// 2) For any month that is not complete, determine what percentage of 25% is the correct percentage
 				// 3) Determine the offset from the left if there exists one.
 				//     a) There will be an offset if the start of the project is after the first day of the
 				//        first month displayed.
 				//     b) The offset is whatever percentage is left from the percentage of 25%.
+
+				// Get current Months
+				var currentMonths = MonthDates.getMonthsFromToday();
 
 				// Get diff of months
 				var start = new Date(project.startDate);
