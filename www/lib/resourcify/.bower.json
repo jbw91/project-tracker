@@ -1,6 +1,6 @@
 {
   "name": "resourcify",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "authors": [
     "Erik Donohoo <erikdonohoo@gmail.com>"
   ],
@@ -33,14 +33,13 @@
     "module.*"
   ],
   "homepage": "https://github.com/erikdonohoo/resourcify",
-  "_release": "1.0.4",
+  "_release": "1.0.5",
   "_resolution": {
     "type": "version",
-    "tag": "v1.0.4",
-    "commit": "fd67eb968ec9fc8fc6ec5b4755e3891d334b1fca"
+    "tag": "v1.0.5",
+    "commit": "3c5867b98f817106b175774ffb166ef8aa9589ec"
   },
   "_source": "git://github.com/erikdonohoo/resourcify.git",
   "_target": "~1.0.4",
-  "_originalSource": "resourcify",
-  "_direct": true
+  "_originalSource": "resourcify"
 }
